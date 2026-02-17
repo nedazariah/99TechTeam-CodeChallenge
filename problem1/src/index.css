@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.main-card {
+    height: 80%;
+    max-width: 90%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.function-container {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.function-card {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.function-card:hover {
+    cursor: pointer;
+    border: 2px solid rgba(173, 216, 230, 1);
+}
+.clicked {
+    border: 2px solid rgba(173, 216, 230, 1);
+    color: lightskyblue;
+    font-weight: bolder;
+}
+
+.result-card {
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    background-color: rgba(135, 206, 250, 0.1);
+    backdrop-filter: blur(10px);
+}
