@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0B1321;
+  color: white;
+}
+
+.container {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 40%;
+  max-height: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-card {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(47, 79, 79, 0.1);
+  backdrop-filter: blur(100px);
+  width: 100%;
+  padding: 2em;
+}
+
+#swap-btn {
+  border-color: rgb(0, 162, 255);
+  background-color: rgba(0, 162, 255, 1);
+  cursor: pointer;
+}
+
+.disabled {
+  border-color: rgba(0, 162, 255, 0.2) !important;
+  background-color: rgba(0, 162, 255, 0.2) !important;
+  cursor: auto !important;
+  color: gray !important;
+  pointer-events: none !important;
+}
+
+.amount-input {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.currency-select {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.transaction-card {
+  width: 100%;
+}
+
+.transaction-log {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;;
+}
+
+.loadiing {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  /* display: none; */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.transaction-log {
+  display: flex;
+}
+.currency-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+.currency-icons img {
+  height: 1.75rem;
+}
+.transaction-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: bold;
+}
+.status {
+  height: fit-content;
+  width: fit-content;
+  padding: 0.55rem;
+  font-weight: bold;
+  font-size: small;
+  color: rgba(139, 250, 139, 0.596);
+  border-radius: 50px;
+  background-color: rgba(139, 250, 139, 0.1);
+}
